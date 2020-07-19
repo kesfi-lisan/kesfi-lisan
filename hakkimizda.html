@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+  <title>Keşf-i Lisan</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="assets/vendors/linearicons/css/linearicons.css" />
+  <link rel="stylesheet" href="assets/vendors/slick/slick.css" />
+  <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css" />
+  <link rel="stylesheet" href="assets/vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="assets/vendors/animate-css/animate.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body data-scroll-animation="true">
+    <div class="body_wrapper">
+        <div class="preloader">
+            <div class="loader-counter">
+                <h1></h1>
+
+                <div class="loader_bg">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile_canvus_menu">
+            <div class="close_btn">
+                <img src="assets/images/icon/close-dark.png" alt="">
+            </div>
+            <div class="menu_part_lux">
+                <ul class="menu_list wd_scroll">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li>
+                        <a href="index.html">
+                            Korunma
+                            <i class="linearicons-chevron-down"></i>
+                        </a>
+                        <ul class="list">
+
+                            <li><a href="semptom_kontrol.html">Symptom Checker</a></li>
+                            <li><a href="korunma.html">Korunma</a></li>
+
+
+                            <li><a href="#">Sık Sorulanlar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Oneriler</a></li>
+                    <li>
+                        <a href="#">
+                            Sayfalar
+                            <i class="linearicons-chevron-down"></i>
+                        </a>
+                        <ul class="list">
+                            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+
+                            <li><a href="#">Search</a></li>
+                            <li><a href="search-nothing.html">Not Found</a></li>
+
+                            <li><a href="#">Hata</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="index.html">
+                            Blog
+                            <i class="linearicons-chevron-down"></i>
+                        </a>
+                        <ul class="list">
+                            <li><a href="kesf_i_lisan_haberleri.html">Blog</a></li>
+                            <li><a href="kesf_i_lisan_icerik.html">Blog Details</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="hakkimizda.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu_btm">
+                <a class="green_btn" href="#"><i class="linearicons-pulse"></i> Gündem </a>
+            </div>
+        </div>
+
+        <div class="body_capture"></div>
+        <section class="sidebar_widget scroll_body">
+            <div class="info_sidebar_inner">
+                <div class="close_btn">
+                    <img src="assets/images/icon/close.png" alt="">
+                </div>
+                <ul class="nav info_social">
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                    </li>
+                </ul>
+                <div class="info_title">
+                    <h2>Görüşleriniz</h2>
+                    <p>Lütfen sorularınız ve görüşlerinize ilişkin bizimle iletişime geçin.</p>
+                </div>
+                <form action="#" class="appoinment_form js-form">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="name" name="name" placeholder="" required />
+                                <label><i class="linearicons-user"></i>İsim</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="email" name="email" placeholder="" required />
+                                <label>
+                                    <i class="linearicons-envelope-open"></i>Mail Adresi
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="number" name="number" placeholder="" required />
+                                <label>
+                                    <i class="linearicons-telephone"></i>Telefon
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea name="message" id="message" cols="30" rows="10" class="form-control" required></textarea>
+                                <label><i class="linearicons-document"></i>Mesajınız</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group checkbox_field">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="None" id="squared2" name="check" />
+                                    <label class="l_text" for="squared2"><span>Gizlilik Politikasını</span> Kabul Ediyorum</label>
+                                </div>
+                                <button type="submit" class="green_btn" name="appoinment" id="appoinment" value="appoinment"
+                                        data-value="appoinment">
+                                    Gönder
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </form>
+                <div class="info_footer">
+
+                </div>
+            </div>
+        </section>
+
+        <header class="header_area">
+            <ul class="nav menu_social flex-column">
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-slack"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-apple"></i></a>
+                </li>
+            </ul>
+            <div class="main_menu">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img style="border-radius:40px 40px 40px 40px; width:40%; height:40%;" src="assets/images/logo_2.png" />
+                        </a>
+
+                        <div class="col-md-8 collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="active"><a href="index.html">Anasayfa</a></li>
+                                <li class="dropdown submenu">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="korunma.html" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Korunma</a>
+                                    <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown submenu">
+
+                                            <ul class="dropdown-menu">
+
+                                                <li><a href="semptom_kontrol.html">Symptom Checker</a></li>
+                                                <li><a href="korunma.html">Korunma</a></li>
+
+
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="#">Sıkca Sorunlanlar</a></li>
+                                        <li><a href="#">Oneriler</a></li>
+                                        <li><a href="kesf_i_lisan_haberleri.html">Blog</a></li>
+                                        <li><a href="#">Blog Secenek 2</a></li>
+                                        <li><a href="kesf_i_lisan_icerik.html">Blog İçerik</a></li>
+                                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown submenu">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="kesf_i_lisan_haberleri.html" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Haberler</a>
+                                    <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="checker_btn">
+                                    <a href="#"><i class="linearicons-pulse"></i> Gündem </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="right_burger">
+                    <ul class="nav">
+                        <li>
+                            <div class="menu_btn">
+                                <img src="assets/images/icon/burger.png" alt="" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <br />
+        <section class="ekibimiz_class">
+            <div class="container">
+                <div class="row ekibimiz_class_ic">
+                    <div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="ekibimiz_class_nesne">
+                            <div class="ekibimiz_class_img">
+                                <img style="width:50%; height:50%" class="img-fluid" src="assets/images/kursat_profil.png" alt="">
+                            </div>
+                            <div class="ekibimiz_class_icerik">
+                                <h6>Bilgisayar Mühendisi</h6>
+                                <h3>Kürşat ÇAKAL</h3>
+                                <p>
+                                    Girişimci, CyberOrg
+                                </p>
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fab fa-microsoft"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="ekibimiz_class_nesne">
+                            <div class="ekibimiz_class_img">
+                                <img style="width:50%; height:50%" class="img-fluid" src="assets/images/can_profil.png" alt="">
+                            </div>
+                            <div class="ekibimiz_class_icerik">
+                                <h6>Bilgisayar Mühendisi</h6>
+                                <h3>Can KORKUT</h3>
+                                <p>
+                                    Girişimci & CyberOrg
+                                </p>
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fab fa-microsoft"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ekibimiz_class">
+            <div class="container">
+                <div class="row ekibimiz_class_ic">
+                    <div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="row contact_details">
+                            <div class="col-lg-6">
+                                <div class="contact_details_item  wow fadeInLeft" data-wow-delay="0.4s">
+                                    <i class="linearicons-telephone"></i>
+                                    <h4>Telefon</h4>
+                                    <a href="tel:+905309559610">
+                                        <h6>+90 530 955 96 10</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="contact_details_item  wow fadeInLeft" data-wow-delay="0.5s">
+                                    <i class="linearicons-envelope-open"></i>
+                                    <h4>Email</h4>
+                                    <a href="mailto:kursat.cakal@hotmail.com">
+                                        <h6>kursat.cakal@hotmail.com</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="row contact_details">
+                            <div class="col-lg-6">
+                                <div class="contact_details_item  wow fadeInLeft" data-wow-delay="0.4s">
+                                    <i class="linearicons-telephone"></i>
+                                    <h4>Telefon</h4>
+                                    <a href="tel:+905061632104">
+                                        <h6>+90 506 163 21 04</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="contact_details_item  wow fadeInLeft" data-wow-delay="0.5s">
+                                    <i class="linearicons-envelope-open"></i>
+                                    <h4>Email</h4>
+                                    <a href="mailto:cannkorkut@gmail.com">
+                                        <h6>cannkorkut@gmail.com</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/vendors/isotop/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendors/isotop/isotope.pkgd.min.js"></script>
+  <script src="assets/vendors/slick/slick.min.js"></script>
+  <script src="assets/vendors/scroll-animation/jquery.parallax-scroll.js"></script>
+  <script src="assets/vendors/scroll-animation/parallax.js"></script>
+  <script src="assets/vendors/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/vendors/animate-css/wow.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

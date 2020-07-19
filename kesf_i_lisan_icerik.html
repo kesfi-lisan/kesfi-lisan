@@ -1,0 +1,824 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+  <title>Keşf-i Lisan</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="assets/vendors/linearicons/css/linearicons.css" />
+  <link rel="stylesheet" href="assets/vendors/slick/slick.css" />
+  <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css" />
+  <link rel="stylesheet" href="assets/vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="assets/vendors/animate-css/animate.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+    <div class="body_wrapper">
+
+        <div class="preloader">
+            <div class="loader-counter">
+                <h1></h1>
+
+                <div class="loader_bg">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile_canvus_menu">
+            <div class="close_btn">
+                <img src="assets/images/icon/close-dark.png" alt="">
+            </div>
+            <div class="menu_part_lux">
+                <ul class="menu_list wd_scroll">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li>
+                        <a href="index.html">
+                            Korunma
+                            <i class="linearicons-chevron-down"></i>
+                        </a>
+                        <ul class="list">
+
+                            <li><a href="semptom_kontrol.html">Symptom Checker</a></li>
+                            <li><a href="korunma.html">Korunma</a></li>
+
+
+                            <li><a href="#">Sık Sorulanlar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Oneriler</a></li>
+                    <li>
+                        <a href="#">
+                            Sayfalar
+                            <i class="linearicons-chevron-down"></i>
+                        </a>
+                        <ul class="list">
+                            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+
+                            <li><a href="#">Search</a></li>
+                            <li><a href="search-nothing.html">Not Found</a></li>
+
+                            <li><a href="#">Hata</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="index.html">
+                            Blog
+                            <i class="linearicons-chevron-down"></i>
+                        </a>
+                        <ul class="list">
+                            <li><a href="kesf_i_lisan_haberleri.html">Blog</a></li>
+                            <li><a href="kesf_i_lisan_icerik.html">Blog Details</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="hakkimizda.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu_btm">
+                <a class="green_btn" href="#"><i class="linearicons-pulse"></i> Gündem </a>
+            </div>
+        </div>
+
+
+        <header class="header_area white_header">
+            <ul class="nav menu_social flex-column">
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+            <div class="main_menu">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img style="border-radius:40px 40px 40px 40px; width:40%; height:40%;" src="assets/images/logo_2.png" />
+                        </a>
+
+                        <div class="col-md-8 collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="active"><a href="index.html">Anasayfa</a></li>
+                                <li class="dropdown submenu">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="korunma.html" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Korunma</a>
+                                    <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown submenu">
+
+                                            <ul class="dropdown-menu">
+
+                                                <li><a href="semptom_kontrol.html">Symptom Checker</a></li>
+                                                <li><a href="korunma.html">Korunma</a></li>
+
+
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="#">Sıkca Sorunlanlar</a></li>
+                                        <li><a href="#">Oneriler</a></li>
+                                        <li><a href="kesf_i_lisan_haberleri.html">Blog</a></li>
+                                        <li><a href="#">Blog Secenek 2</a></li>
+                                        <li><a href="kesf_i_lisan_icerik.html">Blog İçerik</a></li>
+                                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown submenu">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="kesf_i_lisan_haberleri.html" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Haberler</a>
+                                    <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="checker_btn">
+                                    <a href="#"><i class="linearicons-pulse"></i> Gündem </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="right_burger">
+                    <ul class="nav">
+                        <li>
+                            <div class="menu_btn">
+                                <img src="assets/images/icon/burger.png" alt="" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="body_capture"></div>
+        <section class="sidebar_widget scroll_body">
+            <div class="info_sidebar_inner">
+                <div class="close_btn">
+                    <img src="assets/images/icon/close.png" alt="">
+                </div>
+                <ul class="nav info_social">
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                    </li>
+                </ul>
+                <div class="info_title">
+                    <h2>Görüşleriniz</h2>
+                    <p>Lütfen sorularınız ve görüşlerinize ilişkin bizimle iletişime geçin.</p>
+                </div>
+                <form action="#" class="appoinment_form js-form">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="name" name="name" placeholder="" required />
+                                <label><i class="linearicons-user"></i>İsim</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="email" name="email" placeholder="" required />
+                                <label>
+                                    <i class="linearicons-envelope-open"></i>Mail Adresi
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="number" name="number" placeholder="" required />
+                                <label>
+                                    <i class="linearicons-telephone"></i>Telefon
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea name="message" id="message" cols="30" rows="10" class="form-control" required></textarea>
+                                <label><i class="linearicons-document"></i>Mesajınız</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group checkbox_field">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="None" id="squared2" name="check" />
+                                    <label class="l_text" for="squared2"><span>Gizlilik Politikasını</span> Kabul Ediyorum</label>
+                                </div>
+                                <button type="submit" class="green_btn" name="appoinment" id="appoinment" value="appoinment"
+                                        data-value="appoinment">
+                                    Gönder
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <div class="info_footer">
+
+                </div>
+            </div>
+        </section>
+
+        <section style="background: url(assets/images/diller_yok_oluyor_3.png) no-repeat scroll center center; background-size:contain;"
+                 class="single_blog_img">
+
+            <div class="container">
+                <div class="single_blog_text">
+                    <a class="tag" href="#">Türkçe Doğal Dil İşleme ve Önemi</a>
+                    <h2>Dillerin Yok Oluşu ve Türkçe Doğal Dil İşleme</h2>
+                    <ul class="nav">
+                        <li><a href="#"><i class="linearicons-calendar-full"></i>Nisan 18, 2020 </a></li>
+                        <li><a href="#"><i class="linearicons-bubbles"></i>22</a></li>
+                        <li><a href="#">TRT</a></li>
+                        <li>
+                            <a href="#">
+                                <i class="linearicons-radio-button" style="color: #01cfbe;"></i>4 Dakika
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="single_blog_area">
+            <div class="container">
+                <div class="row single_blog_inner">
+                    <div class="col-lg-9">
+                        <div class="single_blog_text_inner">
+                            <div class="single_first_text">
+                                <h6>
+                                    İngiltere'de Kovid-19 ölümleri 44 bin sınırına dayandı
+                                </h6>
+                                <div class="media">
+                                    <div class="i-flex">
+                                        <span>İ</span>
+                                    </div>
+                                    <div class="media-body">
+                                        <p>
+                                            ngiltere'de yeni tip koronavirüs (Kovid-19) nedeniyle yaşamını yitirenlerin sayısı 43 bin 995’e yükseldi.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Sağlık Bakanlığı'nın Twitter üzerinden yayımladığı verilere göre, İngiltere'de son 24 saatte Kovid-19 nedeniyle 89 kişi hayatını kaybetti. Böylece ülkede toplam ölü sayısı 43 bin 995’e çıktı.
+
+                                    Ülkede vaka sayısı 576 artarken toplam vaka sayısı yapılan yeniden değerlendirme ile 283 bin 757 olarak açıklandı. Ayrıntıları paylaşılmayan yeni değerlendirmenin sonucu olarak ülkedeki resmi toplam vaka sayısı dün açıklanan 313 bin 483 sayısının yaklaşık olarak 30 bin vaka gerisine düşmüş oldu.
+
+                                    İngiltere, Kovid-19 kaynaklı ölü sayısında Avrupa'da birinci, dünya genelinde de ABD ve Brezilya'dan sonra 3'üncü sırada yer alıyor.
+                                </p>
+                            </div>
+
+                            <div class="single_blog_bottom">
+                                <div class="row m-0 justify-content-between">
+                                    <div class="left">
+                                        <ul class="nav">
+                                            <li><a href="#">aşı</a></li>
+                                            <li><a href="#">sağlık</a></li>
+                                            <li><a href="#">koronavirüs</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="right">
+                                        <ul class="nav">
+                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-envelope-open-text"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="post_author">
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <img class="rounded-circle" src="assets/images/author.png" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4>Yazar</h4>
+                                        <h6>Bilim Kurulu Üyesi</h6>
+                                        <p>
+                                            İngiltere, Kovid-19 kaynaklı ölü sayısında Avrupa'da birinci, dünya genelinde de ABD ve Brezilya'dan sonra 3'üncü sırada yer alıyor.
+                                        </p>
+                                        <a class="post" href="#"><i class="linearicons-papers"></i> Makale</a>
+                                        <ul class="nav">
+                                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-medium-m"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_comment_list">
+                                <h3 class="cm_title_br">5 Yorum</h3>
+                                <div class="s_comment_list_inner">
+                                    
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <img class="rounded-circle" src="assets/images/comment/comment-4.png"
+                                                 alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <h4>Can Korkut</h4>
+                                            </a>
+                                            <p>
+                                                İngiltere, Kovid-19 kaynaklı ölü sayısında Avrupa'da birinci, dünya genelinde de ABD ve Brezilya'dan sonra 3'üncü sırada yer alıyor.
+                                            </p>
+                                            <h6><i class="linearicons-clock3"></i>  1 Gün Önce</h6>
+                                            <a class="text_btn" href="#">
+                                                Cevap <i class="linearicons-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment_box">
+                                <h3 class="cm_title_br">Yorumunuz</h3>
+                                <form class="row contact_us_form appoinment_form" action="contact_process.php"
+                                      id="contactForm" novalidate="novalidate">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" id="name" name="name"
+                                                   placeholder="" />
+                                            <label><i class="linearicons-user"></i>İsim</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" id="email" name="email"
+                                                   placeholder="" />
+                                            <label>
+                                                <i class="linearicons-envelope-open"></i>Mail Adresi
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" id="subject" name="subject"
+                                                   placeholder="" />
+                                            <label>
+                                                <i class="linearicons-document"></i>
+                                                Konu
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <textarea name="message" id="message" cols="30" rows="10"
+                                                      class="form-control"></textarea>
+                                            <label><i class="linearicons-pencil4"></i>Mesaj</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group checkbox_field">
+
+                                            <button type="submit" class="green_btn">
+                                                Gönder
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="right_sidebar">
+                            <aside class="right_widget ct_widget">
+                                <div class="r_wd_title">
+                                    <h3>Kategoriler</h3>
+                                </div>
+                                <ul class="nav flex-column">
+
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-arrow-right"></i>İlaç
+                                            <span>(29)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-arrow-right"></i>Ekonomik
+                                            <span>(8)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-arrow-right"></i>Korunma
+                                            <span>(33)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-arrow-right"></i>Eğitim
+                                            <span>(27)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-arrow-right"></i>Karantina
+                                            <span>(9)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="linearicons-arrow-right"></i>Sağlık <span>(18)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="linearicons-arrow-right"></i>Seyahat <span>(5)</span></a>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside class="right_widget subs_widget">
+                                <img src="assets/images/subscribe-widget-bg.jpg" alt="">
+                                <div class="subs_text">
+                                    <i class="linearicons-envelope-open"></i>
+                                    <h4>Bildirim Al</h4>
+                                    <p>Bülten listesine size katılın.</p>
+                                    <a class="subs_btn" href="#">Abone Ol</a>
+                                </div>
+                            </aside>
+                            <aside class="right_widget post_widget">
+                                <div class="r_wd_title">
+                                    <h3>Son Dakika</h3>
+                                </div>
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <img src="assets/images/blog/tranding-post/post-1.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4>Aşı çalışmlarında son nokta..</h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <img src="assets/images/blog/tranding-post/post-2.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4>Bilim Kurulu raporu..</h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <img src="assets/images/blog/tranding-post/post-3.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4>Girişim Ekosisteminde COVID-19 etkileri</h4>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="right_widget tag_widget">
+                                <div class="r_wd_title">
+                                    <h3>Popüler Etiketler</h3>
+                                </div>
+                                <ul class="nav">
+                                    <li><a href="#">aşı</a></li>
+                                    <li><a href="#">koronavirüs</a></li>
+                                    <li><a href="#">covid</a></li>
+                                    <li><a href="#">sars</a></li>
+                                    <li><a href="#">ekonomik</a></li>
+                                    <li><a href="#">hamilelik</a></li>
+                                    <li><a href="#">evdekal</a></li>
+                                    <li><a href="#">eğitim</a></li>
+                                </ul>
+                            </aside>
+                            <aside class="right_widget archive_widget ct_widget">
+                                <div class="r_wd_title">
+                                    <h3>Archive</h3>
+                                </div>
+                                <ul class="nav flex-column">
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-calendar-text"></i>Ekim 2019
+                                            <span>(0)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-calendar-text"></i>Aralık 2019
+                                            <span>(0)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-calendar-text"></i>Ocak 2019
+                                            <span>(0)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-calendar-text"></i>Şubat 2020
+                                            <span>(32)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-calendar-text"></i>Mart 2020
+                                            <span>(40)</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-calendar-text"></i>Nisan 2020
+                                            <span>(49)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-calendar-text"></i>Haziran 2020
+                                            <span>(26)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-calendar-text"></i>Ağustos 2019
+                                            <span>(7)</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="app_text">
+                            <h2><span>Keşf-i Lisan</span> Uygulaması!</h2>
+                            <p>
+                                Çok Yakında Hizmetinizde...
+                            </p>
+                            <a class="wow fadeIn" data-wow-delay="400" href="#"><img src="assets/images/apple-btn.png" alt="" /></a>
+                            <a class="wow fadeIn" data-wow-delay="500" href="#"><img src="assets/images/google-btn.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="app_mobile">
+                            <div class="mobile_image">
+                                <img src="assets/images/mobile-1.png" alt="" />
+                                <img class="wow fadeInUp" data-wow-delay="500ms" src="assets/images/mobile-2.png" alt="" />
+                            </div>
+                            <ul class="corona_img nav">
+                                <li>
+                                    <img src="assets/images/icon/app-virus-1.png" alt="" />
+                                </li>
+                                <li>
+                                    <img src="assets/images/icon/app-virus-2.png" alt="" />
+                                </li>
+                                <li>
+                                    <img src="assets/images/icon/app-virus-3.png" alt="" />
+                                </li>
+                                <li data-parallax='{"y": -100}'>
+                                    <img src="assets/images/icon/app-virus-4.png" alt="" />
+                                </li>
+                                <li data-parallax='{"y": 100}'>
+                                    <img src="assets/images/icon/app-virus-5.png" alt="" />
+                                </li>
+                                <li>
+                                    <img src="assets/images/icon/app-virus-6.png" alt="" />
+                                </li>
+                                <li data-parallax='{"y": -200}'>
+                                    <img src="assets/images/icon/app-virus-7.png" alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer_area">
+            <div class="footer_widgets_area pad_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <aside class="f_widget contact_widget">
+                                <div class="f_title">
+                                    <h3>İletişim</h3>
+                                </div>
+                                <div class="ct_wd_text">
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="linearicons-map-marker"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <p>
+                                                Ayazağa Mahallesi Vadistanbul Bulvar Cendere Caddesi No:109/B 1B Blok Ofis No:4<br />
+                                                34396 Sarıyer/İstanbul
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="fab fa-skype"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="skype:">
+                                                <h6>Skype ID: <span>kursatcakal</span></h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="linearicons-envelope-open"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="">
+                                                <h6>Mail: <span>kursat.cakal@hotmail.com</span></h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="ct_wd_text">
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="linearicons-map-marker"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <p>
+                                                Sanayi Mahallesi Hadımköy Caddesi<br />
+                                                Esenyurt/İstanbul
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="fab fa-skype"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="skype:">
+                                                <h6>Skype ID: <span>cannkorkut</span></h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="linearicons-envelope-open"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="">
+                                                <h6>Mail: <span>cannkorkut@gmail.com</span></h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <aside class="f_widget list_widget">
+                                <div class="f_title">
+                                    <h3>Misyon</h3>
+                                </div>
+                                <ul class="nav flex-column">
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Türkçe Doğal Dil İşleme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Doğru Bilgi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Öz Bilgi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Kullanıcı Dostu Arayüz
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>COVID-19 Türkiye
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <aside class="f_widget list_widget">
+                                <div class="f_title">
+                                    <h3>Vizyon</h3>
+                                </div>
+                                <ul class="nav flex-column">
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Türkçe Doğal Dil İşleme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Doğru Bilgi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Öz Bilgi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Kullanıcı Dostu Arayüz
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>COVID-19 Türkiye
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <aside class="f_widget about_widget">
+                                <div class="f_title">
+                                    <h3>Hakkımızda</h3>
+                                </div>
+                                <p>
+                                    Bir başka deyişle her dil, konuşurlarının ruhunu barındırır ve toplumların ruhlarının korunması herkes için önemli olmalıdır. İnsanın atalarını tanıma isteği evrensel bir istek olup bunun gerçekleşmesi dilin varlığına bağlıdır.
+                                </p>
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-slack"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-apple"></i></a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <div class="container">
+                    <img style="border-radius:25px" src="assets/images/logo3.png" alt="">
+                    <span>
+                        © Tüm Hakları Saklıdır
+                    </span>
+
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/vendors/isotop/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotop/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/scroll-animation/jquery.parallax-scroll.js"></script>
+    <script src="assets/vendors/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

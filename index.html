@@ -1,0 +1,1508 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <title>Keşf-i Lisan</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/vendors/linearicons/css/linearicons.css" />
+    <link rel="stylesheet" href="assets/vendors/slick/slick.css" />
+    <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/vendors/mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate-css/animate.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body data-scroll-animation="true">
+    <div class="body_wrapper">
+
+
+        <div class="preloader">
+            <div class="loader-counter">
+                <h1></h1>
+
+                <div class="loader_bg">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile_canvus_menu">
+            <div class="close_btn">
+                <img src="assets/images/icon/close-dark.png" alt="">
+            </div>
+            <div class="menu_part_lux">
+                <ul class="menu_list wd_scroll">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li>
+                        <a href="index.html">
+                            Korunma
+                            <i class="linearicons-chevron-down"></i>
+                        </a>
+                        <ul class="list">
+
+                            <li><a href="semptom_kontrol.html">Symptom Checker</a></li>
+                            <li><a href="korunma.html">Korunma</a></li>
+
+
+                            <li><a href="#">Sık Sorulanlar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Oneriler</a></li>
+                    <li>
+                        <a href="#">
+                            Sayfalar
+                            <i class="linearicons-chevron-down"></i>
+                        </a>
+                        <ul class="list">
+                            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+
+                            <li><a href="#">Search</a></li>
+                            <li><a href="search-nothing.html">Not Found</a></li>
+
+                            <li><a href="#">Hata</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="index.html">
+                            Blog
+                            <i class="linearicons-chevron-down"></i>
+                        </a>
+                        <ul class="list">
+                            <li><a href="kesf_i_lisan_haberleri.html">Blog</a></li>
+                            <li><a href="kesf_i_lisan_icerik.html">Blog Details</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="hakkimizda.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu_btm">
+                <a class="green_btn" href="#"><i class="linearicons-pulse"></i> Gündem </a>
+            </div>
+        </div>
+
+        <div class="body_capture"></div>
+        <section class="sidebar_widget scroll_body">
+            <div class="info_sidebar_inner">
+                <div class="close_btn">
+                    <img src="assets/images/icon/close.png" alt="">
+                </div>
+                <ul class="nav info_social">
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                    </li>
+                </ul>
+                <div class="info_title">
+                    <h2>Görüşleriniz</h2>
+                    <p>Lütfen sorularınız ve görüşlerinize ilişkin bizimle iletişime geçin.</p>
+                </div>
+                <form action="#" class="appoinment_form js-form">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="name" name="name" placeholder="" required />
+                                <label><i class="linearicons-user"></i>İsim</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="email" name="email" placeholder="" required />
+                                <label>
+                                    <i class="linearicons-envelope-open"></i>Mail Adresi
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="number" name="number" placeholder="" required />
+                                <label>
+                                    <i class="linearicons-telephone"></i>Telefon
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea name="message" id="message" cols="30" rows="10" class="form-control" required></textarea>
+                                <label><i class="linearicons-document"></i>Mesajınız</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group checkbox_field">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="None" id="squared2" name="check" />
+                                    <label class="l_text" for="squared2"><span>Gizlilik Politikasını</span> Kabul Ediyorum</label>
+                                </div>
+                                <button type="submit" class="green_btn" name="appoinment" id="appoinment" value="appoinment"
+                                        data-value="appoinment">
+                                    Gönder
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+                <div class="info_footer">
+                   
+                </div>
+            </div>
+        </section>
+
+        <header class="header_area">
+            <ul class="nav menu_social flex-column">
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-slack"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-apple"></i></a>
+                </li>
+            </ul>
+            <div class="main_menu">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img style="border-radius:40px 40px 40px 40px; width:40%; height:40%;" src="assets/images/logo_2.png" />
+                        </a>
+
+                        <div class="col-md-8 collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="active"><a href="index.html">Anasayfa</a></li>
+                                <li class="dropdown submenu">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="korunma.html" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Korunma</a>
+                                    <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown submenu">
+
+                                            <ul class="dropdown-menu">
+
+                                                <li><a href="semptom_kontrol.html">Symptom Checker</a></li>
+                                                <li><a href="korunma.html">Korunma</a></li>
+
+
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="#">Sıkca Sorunlanlar</a></li>
+                                        <li><a href="#">Oneriler</a></li>
+                                        <li><a href="kesf_i_lisan_haberleri.html">Blog</a></li>
+                                        <li><a href="#">Blog Secenek 2</a></li>
+                                        <li><a href="kesf_i_lisan_icerik.html">Blog İçerik</a></li>
+                                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown submenu">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="kesf_i_lisan_haberleri.html" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Haberler</a>
+                                    <i class="linearicons-chevron-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="checker_btn">
+                                    <a href="#"><i class="linearicons-pulse"></i> Gündem </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="right_burger">
+                    <ul class="nav">
+                        <li>
+                            <div class="menu_btn">
+                                <img src="assets/images/icon/burger.png" alt="" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="home_banner_area">
+            <div class="container">
+                <div class="row home_banner_inner">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-6">
+                        <h5 class="wow fadeInUp" data-wow-delay="300ms">COVID-19</h5>
+                        <h3 class="wow fadeInUp" data-wow-delay="500ms"></h3>
+                        <p class="wow fadeInUp" data-wow-delay="400ms">
+                        </p>
+                        <div class="row home_option">
+                            <div class="col-lg-12 wow fadeIn eleman_alt_margin_degerleri" data-wow-delay="300ms">
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <i class="linearicons-shield-check"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4>Korunma</h4>
+                                        <p>Bilgeye Hızlı Erişim</p>
+                                    </div>
+                                </div>
+                            </div><br /><br />
+                            <div class="col-lg-12 wow fadeIn eleman_alt_margin_degerleri" data-wow-delay="400ms">
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <i class="linearicons-pulse"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4>Semptomlar</h4>
+                                        <p>Güncel Semptomlardan Haberdar Ol</p>
+                                    </div>
+                                </div>
+                            </div><br /><br />
+                            <div class="col-lg-12 wow fadeIn eleman_alt_margin_degerleri" data-wow-delay="500ms">
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <i class="linearicons-bubbles"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4>Başvuru</h4>
+                                        <p>Uzmanlara Erişim</p>
+                                    </div>
+                                </div>
+                            </div><br /><br />
+                            <div class="col-lg-12 wow fadeIn eleman_alt_margin_degerleri" data-wow-delay="600ms">
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <i class="linearicons-document2"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4>COVID-19</h4>
+                                        <p>Daha Fazla Bilgi</p>
+                                    </div>
+                                </div>
+                            </div><br /><br />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid wow fadeInRight" data-wow-delay="400ms"
+                             src="assets/images/svg/home-banner-cleaner.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="check_now_area">
+            <div class="container">
+                <div class="row m-0 justify-content-between">
+                    <div class="left">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="assets/images/check-1.png" alt="" />
+                                <img src="assets/images/check-2.png" alt="" />
+                                <img src="assets/images/check-3.png" alt="" />
+                            </div>
+                            <div class="media-body">
+                                <h4>COVID-19 Gündeminin Anlatısal İnşası</h4>
+                                <p style="float:left">
+                                    Doğru ve öz bilginin kaynağına olan serüvenimizde Keşf-i Lisan ile sizinle...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a class="icon_btn wow fadeInRight" data-wow-delay="400ms" href="#">
+                            Erişim <i class="linearicons-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="world_wide_tracker pad_top">
+            <div class="container">
+                <img class="tracker_map" src="assets/images/tracker-map-bg.png" alt="" />
+                <div class="tracker_text">
+                    <h5>Hayatı Kaçırmayın</h5>
+                    <h2>Gündemi Keşf-Lisan ile yakalayın</h2>
+                    <p>Son Güncelleme: Ağustos 18, 2020, 01:43 GMT</p>
+                </div>
+                <div class="row tracker_inner">
+                    <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="300">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="assets/images/icon/corona-red-1.png" alt="" />
+                            </div>
+                            <div class="media-body">
+                                <h2 style="display:inline">13</h2><span style="display:inline; font-weight:bold">(Gün)</span>
+                                <p>Toplam Bülten Marka Desteği</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="400">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="assets/images/icon/corona-black-1.png" alt="" />
+                            </div>
+                            <div class="media-body">
+                                <h2 style="display:inline">9387</h2><span style="display:inline; font-weight:bold">(Gün)</span>
+                                <p>Toplam Haber Taraması</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="500">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="assets/images/icon/corona-green-1.png" alt="" />
+                            </div>
+                            <div class="media-body">
+                                <h2 style="display:inline">508</h2><span style="display:inline; font-weight:bold">(Gün)</span>
+                                <p>Toplam Özütlenen Haber</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 wow fadeIn" data-wow-delay="600">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="assets/images/icon/corona-yellow-1.png" alt="" />
+                            </div>
+                            <div class="media-body">
+                                <h2 style="display:inline">102</h2><span style="display:inline; font-weight:bold">(Gün)</span>
+                                <p>Günlük Özütleme</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tracker_btn">
+                    <a class="green_btn wow fadeInUp" data-wow-delay="500" href="#">
+                        <i class="linearicons-earth-lock"></i>COVID-19 Takip
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="client_logo_area">
+            <div class="container">
+                <div class="client_slider">
+                    <div class="item">
+                        <img style="width:100%; height:100%" src="assets/images/kurumlar/teknofest.png" alt="" />
+                    </div>
+
+                    <div class="item">
+                        <img style="width:100%; height:100%" src="assets/images/kurumlar/acik_hack.png" alt="" />
+                    </div>
+
+                    <div class="item">
+                        <img style="width:100%; height:100%" src="assets/images/kurumlar/bilisim-vadisi.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="symptoms_area">
+            <div style="color:white !important;" class="container">
+                <ul class="nav image_list">
+                    <li><img src="assets/images/sm-1.png" alt=""></li>
+                    <li><img src="assets/images/sm-2.png" alt=""></li>
+                    <li><img src="assets/images/sm-3.png" alt=""></li>
+                </ul>
+                <div class="title_text wow fadeInUp" data-wow-delay="400ms">
+                    <br /><br /><br /><br />
+                    <h5>Keşf-i Lisan Yapıtaşları</h5>
+                    <h6 style="color:#016f66">Bilgiler size sunulmadan hangi aşamalardan geçiyor?</h6>
+                </div>
+
+                <div class="row symptoms_inner">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="1400ms">
+                        <div class="symptoms_item">
+                            <div class="media">
+                                <div class="d-flex">
+                                    <img class="resim_radius_ortak_class" src="assets/images/veri_toplama.png" alt="" />
+                                </div>
+                                <div class="media-body">
+                                    <h4>Veri Toplama</h4>
+                                    <p>
+                                        Gündemde üretilen en kıymetli verileri botlarımız ile sizin için topluyoruz...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="1500ms">
+                        <div class="symptoms_item">
+                            <div class="media">
+                                <div class="d-flex">
+                                    <img class="resim_radius_ortak_class" src="assets/images/veri_normalizasyonu.png" alt="" />
+                                </div>
+                                <div class="media-body">
+                                    <h4>Veri Normalizasyonu</h4>
+                                    <p>
+                                        Topladığımız verileri algoritmalarımızda işlemek üzere durulaştırıyoruz...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="1600ms">
+                        <div class="symptoms_item">
+                            <div class="media">
+                                <div class="d-flex">
+                                    <img class="resim_radius_ortak_class" src="assets/images/veri_kumeleme.png" alt="" />
+                                </div>
+                                <div class="media-body">
+                                    <h4>Veri Kümelemesi</h4>
+                                    <p>
+                                        Bilgileri anlamlı çıktılar üretmek için kümeliyoruz...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="1600ms">
+                        <div class="symptoms_item">
+                            <div class="media">
+                                <div class="d-flex">
+                                    <img class="resim_radius_ortak_class" src="assets/images/veri_analiz_asama.png" alt="" />
+                                </div>
+                                <div class="media-body">
+                                    <h4>Veri Analizi</h4>
+                                    <p>
+                                        Büyük zaman aralığında okunacak verilerin, anlam kaybı yaşanmadan en asagari
+                                        zaman aralığında özümsenmesini sağlamak adına sizlere sunmaya hazırlıyoruz...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent_area">
+            <div class="container">
+                <div class="row prevent_inner">
+                    <div class="col-lg-6">
+                        <div class="prevent_item_inner row">
+                            <div class="col-sm-6 wow fadeInUp" data-wow-delay="400ms">
+                                <div class="prevent_item">
+                                    <div class="prevent_img">
+                                        <img class="img-fluid" src="assets/images/diller_yok_oluyor_1.png" alt="" />
+                                    </div>
+                                    <div class="prevent_text">
+                                        <h4><a href="https://www.nytimes.com/2007/09/18/world/18cnd-language.html">Dillerin Yok Oluşu</a></h4>
+                                        <p>
+                                            Bugün dünyada konuşulan tahmini 7.000 dilden dilbilimcilerin neredeyse yarısı yok olma tehlikesi altında olduğunu ve bu yüzyılda kaybolacağını söylüyor.
+                                            Aslında, şimdi iki haftada bir oranında kullanımdan düşüyorlar.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeInUp" data-wow-delay="500ms">
+                                <div class="prevent_item">
+                                    <div class="prevent_img">
+                                        <img class="img-fluid" src="assets/images/diller_yok_oluyor_2.png" alt="" />
+                                    </div>
+                                    <div class="prevent_text">
+                                        <h4><a href="https://www.nationalgeographic.com/news/2018/04/saving-dying-disappearing-languages-wikitongues-culture/">Dünyanın Yok Olan Dilleri</a></h4>
+                                        <p>
+                                            Mavi tenteler düğün ve etkinlikler için alanın reklamını yapar. İçeride, bir giriş yolu, onlarca yıllık “Miss Gottschee” yarışmacılarının sakarin gülümsemeleriyle kaplıdır. "O zamanlar yarışacak dili bilmek zorundaydınız," diyor 92 yaşındaki Alfred Belay, kızının 1980'lerden gelen parlak yüzüne işaret ediyor. Günümüzde, yarışmasında sadece tek bir yarışmacının olduğu yıllar var.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeInUp" data-wow-delay="600ms">
+                                <div class="prevent_item">
+                                    <div class="prevent_img">
+                                        <img class="img-fluid" src="assets/images/diller_yok_oluyor_3.png" alt="" />
+                                    </div>
+                                    <div class="prevent_text">
+                                        <h4><a href="https://www.smithsonianmag.com/smart-news/four-things-happen-when-language-dies-and-one-thing-you-can-do-help-180962188/">Bir Dilin Ölümünde Olan 4 Şey</a></h4>
+                                        <p>
+                                            En acımasız tahminler bu yüzyılın sonuna kadar dünya dillerinin yüzde 90'ının ölmesine neden oluyor. Bu, konuşuldukları kültürle kişisel bağları olmayan bir İngilizce konuşmacının günlük yaşamında önemli görünmese de, dil kaybı önemlidir. İşte hepimiz kaybettiklerimiz:
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeInUp" data-wow-delay="700ms">
+                                <div class="prevent_item">
+                                    <div class="prevent_img">
+                                        <img class="img-fluid" src="assets/images/diller_yok_oluyor_4.png" alt="" />
+                                    </div>
+                                    <div class="prevent_text">
+                                        <h4><a href="https://www.hurriyet.com.tr/gundem/dunya-dillerinin-yarisi-yokolma-tehlikesi-icinde-55540">Dünya dillerinin yarısı yokolma tehlikesi içinde</a></h4>
+                                        <p>
+
+                                            Birleşmiş Milletler (BM) destekli bir araştırma, dünyada konuşulan yaklaşık 6000 dilin yarısının tehdit altında olduğu ve onlarla birlikte zengin insanlık bilgisinin de yok olabileceği uyarısında bulundu.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="prevent_details">
+                            <div class="prevent_details_text">
+                                <h6>Dillerin Yok Oluş Serüveni</h6>
+                                <h4>Keşf-i Lisan</h4>
+                                <p>
+                                    Bir başka deyişle her dil, konuşurlarının ruhunu barındırır ve toplumların ruhlarının korunması herkes için önemli olmalıdır. İnsanın atalarını tanıma isteği evrensel bir istek olup bunun gerçekleşmesi dilin varlığına bağlıdır. Bir dil öldüğünde geçmişle olan bağlar yok olur. Dil çeşitliliği kültür çeşitliliğinin de bir göstergesidir. Dilin ölümü, kültürel ölümün belirtisidir. Bir dilin ölmesiyle bir yaşama biçimi de ortadan kalkar. Yalnızca bilimsel kaygılarla bile olsa dillerin korunması gerekir. Çünkü dil bilimciler, dil yapısına ilişkin kuramlarını yetkinleştirecek ve gelecek öğrenci kuşaklarını dil bilimsel çözümleme alanında yetiştireceklerse, olabildiğince çok sayıda farklı dili incelemeye ihtiyaç duyacaklardır. Dil bilimcilerin çabaları sayesinde Anadolu'da konuşulan ve artık ölü bir dil olan Ubıhça gibi 81 ünsüz ve 3 ünlüden oluşan ses dizeli bir dil ölümüne ramak kala tespit edilebilmiştir.
+                                </p>
+
+
+                                <a class="green_btn" href="#">
+                                    <i class="linearicons-shield-check"></i> Daha Fazla
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="answers_area p_100">
+            <div class="container">
+                <div class="main_title">
+                    <h5>Öne Çıkanlar</h5>
+                    <h2>Gündemden Derlemeler</h2>
+                </div>
+                <div class="row answer_inner">
+                    <div class="col-lg-4">
+                        <div class="question_list">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                            Ekonomi
+                                            <i class="linearicons-chevron-down"></i>
+                                        </button>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                         data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                                       aria-controls="contact" aria-selected="false">
+                                                        Cumhurbaşkanı Sesleniş Özet
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                                       aria-controls="home" aria-selected="true">Borsa İstanbul Açıklama</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                                       aria-controls="profile" aria-selected="false">Konut Alım Satım</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="four-tab" data-toggle="tab" href="#four" role="tab"
+                                                       aria-controls="four" aria-selected="false">
+                                                        Turizm Bakanı Açıklama
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="five-tab" data-toggle="tab" href="#five" role="tab"
+                                                       aria-controls="five" aria-selected="false">
+                                                        Bilim Kurulu Uyarıyor
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Sağlık
+                                            <i class="linearicons-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="home2-tab" data-toggle="tab" href="#home2" role="tab"
+                                                       aria-controls="home2" aria-selected="true">
+                                                        Cumhurbaşkanı Sesleniş Özet
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="profile2-tab" data-toggle="tab" href="#profile2" role="tab"
+                                                       aria-controls="profile2" aria-selected="false">Borsa İstanbul Açıklama</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="contact2-tab" data-toggle="tab" href="#contact2" role="tab"
+                                                       aria-controls="contact2" aria-selected="false">
+                                                        Konut Alım Satım
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="four2-tab" data-toggle="tab" href="#four2" role="tab"
+                                                       aria-controls="four2" aria-selected="false">
+                                                        Turizm Bakanı Açıklama
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="five2-tab" data-toggle="tab" href="#five2" role="tab"
+                                                       aria-controls="five2" aria-selected="false">
+                                                        Bilim Kurulu Uyarıyor
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Eğitim
+                                            <i class="linearicons-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                         data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul class="nav nav-tabs" id="myTab3" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="home3-tab" data-toggle="tab" href="#home3" role="tab"
+                                                       aria-controls="home3" aria-selected="true">
+                                                        Cumhurbaşkanı Sesleniş Özet
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="profile3-tab" data-toggle="tab" href="#profile3" role="tab"
+                                                       aria-controls="profile3" aria-selected="false">Borsa İstanbul Açıklama</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="contact3-tab" data-toggle="tab" href="#contact3" role="tab"
+                                                       aria-controls="contact3" aria-selected="false">
+                                                        Konut Alım Satım
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="four3-tab" data-toggle="tab" href="#four3" role="tab"
+                                                       aria-controls="four3" aria-selected="false">
+                                                        Turizm Bakanı Açıklama
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="five3-tab" data-toggle="tab" href="#five3" role="tab"
+                                                       aria-controls="five3" aria-selected="false">
+                                                        Bilim Kurulu Uyarıyor
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingfive">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                            Seyahat
+                                            <i class="linearicons-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul class="nav nav-tabs" id="myTab5" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="home5-tab" data-toggle="tab" href="#home5" role="tab"
+                                                       aria-controls="home5" aria-selected="true">
+                                                        Cumhurbaşkanı Sesleniş Özet
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="profile5-tab" data-toggle="tab" href="#profile5" role="tab"
+                                                       aria-controls="profile5" aria-selected="false">Borsa İstanbul Açıklama</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="contact5-tab" data-toggle="tab" href="#contact5" role="tab"
+                                                       aria-controls="contact5" aria-selected="false">
+                                                        Konut Alım Satım
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="four5-tab" data-toggle="tab" href="#four5" role="tab"
+                                                       aria-controls="four5" aria-selected="false">
+                                                        Turizm Bakanı Açıklama
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="five5-tab" data-toggle="tab" href="#five5" role="tab"
+                                                       aria-controls="five5" aria-selected="false">
+                                                        Bilim Kurulu Uyarıyor
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="tab-content answer_details" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="five-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+
+                            <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home2-tab">
+                                <h4>Alt Sayfa 2 : Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile2-tab">
+                                <h4>Alt Sayfa 2 : Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact2-tab">
+                                <h4>Alt Sayfa 2 : Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="four2" role="tabpanel" aria-labelledby="four2-tab">
+                                <h4>Alt Sayfa 2 : Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="five2" role="tabpanel" aria-labelledby="five2-tab">
+                                <h4>Alt Sayfa 2 : Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+
+                            <div class="tab-pane fade show active" id="home3" role="tabpanel" aria-labelledby="home3-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="profile3" role="tabpanel" aria-labelledby="profile3-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="contact3" role="tabpanel" aria-labelledby="contact3-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="four3" role="tabpanel" aria-labelledby="four3-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="five3" role="tabpanel" aria-labelledby="five3-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+
+                            <div class="tab-pane fade show active" id="home4" role="tabpanel" aria-labelledby="home4-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="profile4" role="tabpanel" aria-labelledby="profile4-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="contact4" role="tabpanel" aria-labelledby="contact4-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="four4" role="tabpanel" aria-labelledby="four4-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="five4" role="tabpanel" aria-labelledby="five4-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+
+                            <div class="tab-pane fade show active" id="home5" role="tabpanel" aria-labelledby="home5-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="profile5" role="tabpanel" aria-labelledby="profile5-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="contact5" role="tabpanel" aria-labelledby="contact5-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="four5" role="tabpanel" aria-labelledby="four5-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="five5" role="tabpanel" aria-labelledby="five5-tab">
+                                <h4>Ekonomi ve Korona Virüs</h4>
+                                <p>
+                                    Yeni vaka sayılarının artması veya azalması mart ve nisandan itibaren kapanan ekonomilerin normalleşme adımlarını ne hızda atacağı konusunda belirleyici oluyor. Bunun yanında merkez bankaları ve hükümetler de bu veriler ışığında ekonomileri canlandırmaya yönelik adımlar atıyor.
+                                </p>
+                                <p>
+
+                                    Bu sayede Borsa İstanbul'da BIST 100 endeksi 2020 yılında salgın şokuyla verdiği kayıpların tamamını geri aldı. Endeks 2019 yılını 114 bin 424 puandan kapatmıştı. 23 Mart'ta ise 84 bin 246 puana kadar geriledi. Yani yüzde 26.4'lük düşüş yaşandı.
+                                </p>
+
+                                <p>
+                                    Son dönemdeki yükselişte atılan normalleşme adımları etkili oldu. Bunun yanında mart-nisan aylarından itibaren küçük yatırımcının Borsa İstanbul'a ilgisinin artması ve hisselerde yaşanmış düşüşün bir alım fırsatı olarak görülmesi etkili oldu.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home_latest_blog_area">
+            <div class="container">
+                <div class="main_title text-center">
+                    <h5>Son Dakika</h5>
+                    <h2>Gelişmeler Hakkında</h2>
+                    <p>
+                        COVID-19 gündeminden sadece 8 dakikada haberdar olun.
+                    </p>
+                </div>
+                <div class="row l_blog_inner">
+                    <div class="col-lg-8">
+                        <div class="big_l_blog_item">
+                            <div class="l_blog_img">
+                                <img class="img-fluid" src="assets/images/caf_caf.jpg" alt="" />
+                            </div>
+                            <div class="l_blog_text">
+                                <div class="date">
+                                    <a href="#"><i class="linearicons-calendar-full"></i> Tem 12, 2020</a>
+                                    <a href="#"><i class="linearicons-bubbles"></i> 22</a>
+                                </div>
+                                <div class="blog_btm_text">
+                                    <div class="tag">Haberler</div>
+                                    <div class="author">
+                                        <a href="#">Hürriyet</a>
+                                        <a href="#"><i class="linearicons-radio-button"></i> 4 dakika</a>
+                                    </div>
+                                    <a href="#">
+                                        <h3>COVID-19 <br /> günün sosyal boyutuna dair</h3>
+                                    </a>
+                                    <a class="text_btn" href="#">Detaylar <i class="linearicons-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="small_l_blog_item">
+                            <div class="l_blog_img">
+                                <img class="img-fluid" src="assets/images/beyin_elektro.jpg" alt="" />
+                            </div>
+                            <div class="l_blog_text">
+                                <div class="date">
+                                    <a href="#"><i class="linearicons-calendar-full"></i> Tem 11, 2020</a>
+                                    <a href="#"><i class="linearicons-bubbles"></i> 39</a>
+                                </div>
+                                <a href="#">
+                                    <h3>Günün ekonomi boyutuna dair</h3>
+                                </a>
+                                <a class="text_btn" href="#">Detaylar <i class="linearicons-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="small_l_blog_item">
+                            <div class="l_blog_img">
+                                <img class="img-fluid" src="assets/images/Natural-Language-Processing.png" alt="" />
+                            </div>
+                            <div class="l_blog_text">
+                                <div class="date">
+                                    <a href="#"><i class="linearicons-calendar-full"></i> Tem 11, 2020</a>
+                                    <a href="#"><i class="linearicons-bubbles"></i> 39</a>
+                                </div>
+                                <a href="#">
+                                    <h3>What is an underlying health condition?</h3>
+                                </a>
+                                <a class="text_btn" href="#">Detaylar <i class="linearicons-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="app_text">
+                            <h2><span>Keşf-i Lisan</span> Uygulaması!</h2>
+                            <p>
+                                Çok Yakında Hizmetinizde...
+                            </p>
+                            <a class="wow fadeIn" data-wow-delay="400" href="#"><img src="assets/images/apple-btn.png" alt="" /></a>
+                            <a class="wow fadeIn" data-wow-delay="500" href="#"><img src="assets/images/google-btn.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="app_mobile">
+                            <div class="mobile_image">
+                                <img src="assets/images/mobile-1.png" alt="" />
+                                <img class="wow fadeInUp" data-wow-delay="500ms" src="assets/images/mobile-2.png" alt="" />
+                            </div>
+                            <ul class="corona_img nav">
+                                <li>
+                                    <img src="assets/images/icon/app-virus-1.png" alt="" />
+                                </li>
+                                <li>
+                                    <img src="assets/images/icon/app-virus-2.png" alt="" />
+                                </li>
+                                <li>
+                                    <img src="assets/images/icon/app-virus-3.png" alt="" />
+                                </li>
+                                <li data-parallax='{"y": -100}'>
+                                    <img src="assets/images/icon/app-virus-4.png" alt="" />
+                                </li>
+                                <li data-parallax='{"y": 100}'>
+                                    <img src="assets/images/icon/app-virus-5.png" alt="" />
+                                </li>
+                                <li>
+                                    <img src="assets/images/icon/app-virus-6.png" alt="" />
+                                </li>
+                                <li data-parallax='{"y": -200}'>
+                                    <img src="assets/images/icon/app-virus-7.png" alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe_area apps_craft_animation">
+            <ul class="nav">
+                <li><img class="layer layer2" data-depth="0.5" src="assets/images/icon/subs-1.png" alt=""></li>
+                <li><img src="assets/images/icon/subs-2.png" alt=""></li>
+                <li><img src="assets/images/icon/subs-3.png" alt=""></li>
+            </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="media">
+                            <div class="d-flex">
+                                <i class="linearicons-mailbox-full"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4>Bildirim almak ister misin ?</h4>
+                                <p>
+                                    Mail bildirim listemize katılarak bilgi alabilirsin...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mail_box">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="&#xe997; Mail adresi"
+                                       aria-label="Recipient's username" aria-describedby="button-addon2" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                        <i class="linearicons-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer_area">
+            <div class="footer_widgets_area pad_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <aside class="f_widget contact_widget">
+                                <div class="f_title">
+                                    <h3>İletişim</h3>
+                                </div>
+                                <div class="ct_wd_text">
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="linearicons-map-marker"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <p>
+                                                Ayazağa Mahallesi Vadistanbul Bulvar Cendere Caddesi No:109/B 1B Blok Ofis No:4<br />
+                                                34396 Sarıyer/İstanbul
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="fab fa-skype"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="skype:">
+                                                <h6>Skype ID: <span>kursatcakal</span></h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="linearicons-envelope-open"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="">
+                                                <h6>Mail: <span>kursat.cakal@hotmail.com</span></h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="ct_wd_text">
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="linearicons-map-marker"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <p>
+                                                Sanayi Mahallesi Hadımköy Caddesi<br />
+                                                Esenyurt/İstanbul
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="fab fa-skype"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="skype:">
+                                                <h6>Skype ID: <span>cannkorkut</span></h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <i class="linearicons-envelope-open"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="">
+                                                <h6>Mail: <span>cannkorkut@gmail.com</span></h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <aside class="f_widget list_widget">
+                                <div class="f_title">
+                                    <h3>Misyon</h3>
+                                </div>
+                                <ul class="nav flex-column">
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Türkçe Doğal Dil İşleme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Doğru Bilgi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Öz Bilgi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Kullanıcı Dostu Arayüz
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>COVID-19 Türkiye
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <aside class="f_widget list_widget">
+                                <div class="f_title">
+                                    <h3>Vizyon</h3>
+                                </div>
+                                <ul class="nav flex-column">
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Türkçe Doğal Dil İşleme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Doğru Bilgi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Öz Bilgi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>Kullanıcı Dostu Arayüz
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="linearicons-radio-button"></i>COVID-19 Türkiye
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <aside class="f_widget about_widget">
+                                <div class="f_title">
+                                    <h3>Hakkımızda</h3>
+                                </div>
+                                <p>
+                                    Bir başka deyişle her dil, konuşurlarının ruhunu barındırır ve toplumların ruhlarının korunması herkes için önemli olmalıdır. İnsanın atalarını tanıma isteği evrensel bir istek olup bunun gerçekleşmesi dilin varlığına bağlıdır.
+                                </p>
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-github"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-slack"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-apple"></i></a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <div class="container">
+                    <img style="border-radius:25px" src="assets/images/logo3.png" alt="">
+                    <span>
+                        © Tüm Hakları Saklıdır
+                    </span>
+
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/isotop/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotop/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/scroll-animation/jquery.parallax-scroll.js"></script>
+    <script src="assets/vendors/scroll-animation/parallax.js"></script>
+    <script src="assets/vendors/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/vendors/animate-css/wow.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
